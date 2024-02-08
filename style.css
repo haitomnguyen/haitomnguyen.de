@@ -1,0 +1,112 @@
+html {
+    cursor: url("https://drive.google.com/thumbnail?id=1dI6m1yVBJUZ4trQnh49VyGyEdfszp9Th&sz=s4000") 1 18, auto !important ;
+}
+a {
+    cursor: url("https://drive.google.com/thumbnail?id=17fPnPcuyNjNjzRVjaxpbqOuJFXg_xhaD&sz=s4000") 1 18, auto !important;
+}
+
+.content img {
+    cursor: url("https://drive.google.com/thumbnail?id=17fPnPcuyNjNjzRVjaxpbqOuJFXg_xhaD&sz=s4000") 1 18, auto !important;
+}
+
+
+body {
+    background-color: #fff7ba;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #fff7ba;
+    padding: 20px;
+    text-align: center;
+}
+
+#slideshow-container {
+    width: 100vw; /* Adjust based on desired size, keeping the aspect ratio */
+    max-width: 900px; /* Example maximum size */
+    height: 100vw;
+    max-height: 350px;
+    padding-bottom: 8%; /* Maintain square aspect ratio */
+    position: relative;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff7ba; /* Background color for the container */
+}
+
+.mySlides img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain; /* Ensures image fits without cropping, might leave empty space */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image both horizontally and vertically */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0); /* Optional: for better visibility */
+    z-index: 10;
+}
+
+.next {
+    right: -10px; /* Adjust as necessary to fit within the layout */
+}
+
+.prev {
+    left: -10px; /* Adjust as necessary to fit within the layout */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+}
+
+footer {
+    background-color: #fff7ba;
+    padding: 20px;
+    font-size: 12px;
+
+}
+.underlined-link {
+    text-decoration: underline;
+    color: black; /* You can change the color to your preference */
+}
+}
+.link {
+    color: black; /* You can change the color to your preference */
+}
+
+p2 {
+    font-size: smaller;
+}
+
